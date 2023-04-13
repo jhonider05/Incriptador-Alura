@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encriptador y Desencriptador</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Encriptador y Desencriptador</h1>
+	<div class="contenedor">
+		<label for="texto-encriptar">Texto a encriptar:</label>
+		<input type="text" id="texto-encriptar">
+		<button onclick="encriptar()">Encriptar</button>
+	</div>
+	<div class="contenedor">
+		<label for="texto-desencriptar">Texto a desencriptar:</label>
+		<input type="text" id="texto-desencriptar">
+		<button onclick="desencriptar()">Desencriptar</button>
+	</div>
+	<div class="contenedor">
+		<label for="texto-encriptado">Texto encriptado:</label>
+		<input type="text" id="texto-encriptado" readonly>
+		<button onclick="copiarTexto('texto-encriptado')">Copiar</button>
+	</div>
+	<div class="contenedor">
+		<label for="texto-desencriptado">Texto desencriptado:</label>
+		<input type="text" id="texto-desencriptado" readonly>
+		<button onclick="copiarTexto('texto-desencriptado')">Copiar</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
